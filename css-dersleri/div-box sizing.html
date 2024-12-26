@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Div-Box Sizing</title>
+<style>
+	/**{
+		box-sizing: border-box;
+	}*/
+
+	.box1{
+		background-color: blue;
+		width: 250px;
+		height: 250px;
+		padding: 20px;
+		border: 10px solid red;
+		box-sizing: border-box;
+		
+	}
+
+	.box2{
+		background-color: green;
+		width: 250px;
+		height: 250px;
+		/*padding: 20px;
+		border: 10px solid red;
+		box-sizing: border-box;*/
+	}
+  </style>
+ </head>
+<body>
+ 	<div class="box1"></div>
+	<div class="box2"></div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!-- div nedir? satırı kullanmasan bile kullanılmış gibi kabul eder.
+
+Divlerden fazla yapıp web sitemizde kullanacağız.
+
+box sizing 2 farklı değeri var. default olarak content-box geliyor.
+
+		*{
+			box-sizing: border-box;
+		}
+
+/*evrensel koda bir kere tanımladım.bütün kodlarıma bunu işle*/
+
+/*width = 250px + (20*2) + (10*2)=310px
+vermiş oldugum belirli değer varsa padding, varsa border
+(2tane sağ sol)*/-->
+

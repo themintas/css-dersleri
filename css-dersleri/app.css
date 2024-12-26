@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Agu+Display&display=swap');
+h4{
+	/*CSS yorum satırı açıklama */
+		color: red;
+		background-color: yellow;
+		border-radius: 15px;
+		text-align: center;
+	}
+
+	/*	.text{
+			font-size: 20px;
+		 }
+
+		p{
+			font-size: 1em;
+		}*/
+
+/*bir üst kapsayıcı etiketinde font-size değeri kaçsa 1em ona eşittir.
+1em=20px*/
+
+/* html{
+		font-size: 10px;
+	 }
+
+		p{
+		font-size: 1rem;
+		}
+*/
+/*html dosyasındaki etiketi baz alıyor.*/
+
+
+
+/*
+body{
+  font-family: "Agu Display", serif;
+}*/
+
+/*@font-face{
+	font-family: "deneme";
+	src:url(font/AguDisplay-Regular.ttf);
+}
+
+body{
+	font-family: "deneme";
+}*/
+/*localde kullanmak en net ve avantajlı yöntemdir.
+dosyalara sahip olmanın dezavantajı olmaz*/
+
+

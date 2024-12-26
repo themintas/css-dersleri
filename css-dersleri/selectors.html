@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>selectors-seçiciler</title>
+	<style>
+			 *{
+			color: black;
+/*			* evrensel bir işarettir*/
+			}
+
+		/*p{
+			color: deeppink;
+		}*/
+
+		/*p,a{
+			color: blue;
+		}*/
+
+		/*div p{
+			color: red;
+		}*/
+/*boşluklu olursa divin içindeki bütün p'ler*/
+
+		/*div>a{
+			color: hotpink;
+		   }*/
+/*annesi div olan bütün a'lar*/
+
+		/*div+p{
+			color: green;
+		}*/
+/*div elementinden hemen sonraki p elementlerinin ilkini alıyorum*/
+
+		/*div ~ p{
+			color: blue;
+		}*/ 
+/*divden sonraki bütün p'leri al kardeş demek*/
+
+	/*div>p:first-child 
+		{
+	color: red;
+		}*/
+/*annesi div olan p'lerin ilk cocugu ve son cocugu seç(first-child)*/
+
+		/*div>p:nth-child(3)
+		{
+	color: hotpink;
+		}*/
+
+		/*div>nav>a:nth-child(3)
+		    {
+			color: red;	
+			}*/ 
+/*annesi div olan navın içindeki a elementlerinin cocuklarından 3.yü seç*/
+
+	/*.div2>ul li:last-child
+		{
+	color: red;
+		}*/
+/*class ismi div2 olanın içindeki cocuklardan ul nin cocukları li'den lastı seç ya da firsti seç.
+
+annesi ul olan butun lileri dediğimiz için > koymak bir şeyi değiştirmez bosta bırakabiliriz zaten butun lilerin annesi ul*/
+
+/*.div2>ul>div li:last-child
+			{
+			color: red;
+			}*/
+/*class ismi div2 olanın içindeki annesi ul olan divin içindeki lilerin ilk cocugu*/
+</style>
+</head>
+<body>
+	<div>
+		<p>paragraf 1</p>
+		<p>paragraf 2</p>
+		<p>paragraf 3</p>
+		<p>paragraf 4</p>
+		<p>paragraf 5</p>
+
+<nav>
+	<p>paragraf6</p>
+	<a href="">link 1</a>
+	<a href="">link 2</a>
+	<a href="">link 3</a>
+</nav>
+
+<a href="">link 4</a>
+<a href="">link 5</a>
+</div>
+
+<div class="div2">
+<p>paragraf7</p>
+<ul>
+	<li>li etiketi 1</li>
+	<li>li etiketi 2</li>
+	<li>li etiketi 3</li>
+	<div>
+		<li>li etiketi 4</li>
+		<li>li etiketi 5</li>
+	</div>
+</ul>
+<p>paragraf8</p>	
+<p>paragraf9</p>
+</div>
+<p>paragraf10</p>
+<p>paragraf11</p>
+
+<div>
+	<h3>baslık etiketi 1</h3>
+</div>
+	<h3>baslık etiketi 2</h3>
+	<h3>baslık etiketi 3</h3>
+	<h3>baslık etiketi 4</h3>
+</body>
+</html>
+
+<!-- th: ıncı, inci demek
+nth: n'inci değeri seç diyorum
+* css'de html elemanlarını bu şekilde seçebilirim çok karsılasıp çok kullanacaksınız.
+ https://www.w3schools.com/cssref/css_selectors.php
+ -->

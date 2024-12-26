@@ -1,0 +1,73 @@
+body {
+    color:red;
+}
+
+.title {
+    font-size:6rem;
+}
+
+.subtitle {
+    font-size:3rem;
+}
+/*media screen property (ekran demek) min. 600 px ve üstü için bu kodları çalıştır dedim*/
+@media screen and (min-width:600px) {
+    .title {
+        font-size:8rem;
+        color:aqua;
+    }
+}
+
+/*max. 500 px ve aşağısı için bu kodları çalıştır. */
+@media screen and (max-width:500px) {
+    .title {
+        font-size:4rem;
+        color:blue;
+    }
+}
+
+/*@media print{
+   .title {
+    color: deeppink;
+   } 
+}*/
+/*çıktı almak istediğim zaman title siyah olur*/
+
+/*@media all and (max width:)*/
+/*vereceğim kodlar tüm ekranlar için
+geçerli demek all. "all" kullanmadan da yapabilirim örnek asagıda*/
+@media (max-width:500px){
+    .title {
+        color: purple;
+    }
+}
+.box{
+    width: 250px;
+    height: 250px;
+    background-color: deeppink;
+}
+
+@media (max-width:500px){
+.box{
+    background-color: yellow ;
+}
+}
+
+
+
+/*.title {
+color: red;
+}*/
+/*title burada kullanıldığında değişiklik olmaz
+cunku css yukarıdan asagıya dogru okur kodları
+burada media queriler devre dısı olmus oluyor.
+burada yazdıgımız sıralar onemlidir.*/
+
+@media (min-width:1200px){
+/*.... min. 1200px yani butun masaustu cihazları dahil ettim*/
+}
+@media (max-width:1199px){
+/*.... 1200un altına dustum yanı mobil cihazlar aslında*/
+}
+@media (max-width: 967px){
+/*.... tablet cihazlar için olan*/
+}

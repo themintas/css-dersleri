@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Position</title>
+	<style>
+	* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+     }
+
+.box {
+    width: 250px;
+    height:250px;
+}
+.red {
+    background:red;
+    margin-bottom: 20px;
+/*    top: 50px;*/
+}
+.blue {
+    background:blue;
+    margin-bottom: 20px;
+    position: sticky;
+    top: 20;
+}
+.black {
+    background:black;
+    margin-bottom: 20px;
+}
+
+.purple {
+    background:purple;
+}
+
+.relative {
+/*    position: relative; */
+    width: 100%;
+    height: 500px;
+}
+
+.relative .box {
+/*  position: fixed;*/
+    right:0;
+    top:0;
+}
+
+/*.kados {
+    height: 1000px;
+}*/
+	</style>
+</head>
+<body>
+	<div class="box red"></div>
+	<div class="box blue"></div>
+	<div class="box black"></div>
+</body>
+</html>
+
+<!-- etiketlerin pozisyonlarıı belirlememize yarayan css özelliğidir
+
+kutucukları ekranın istediğim yerine pozisyonlayabilirim
+
+aldıgı özellikler:
+static - relative - absolute - fixed - sticky
+
+1-varsayılan olarak static alır etiketler. verip vermemenin önemi yok. default etiketlerin davranış biçimleriyle aynıdır. static top left falan alamaz.
+
+relative: left rigth top gibi değerler alabiliyor
+akışta olmaya devam ediyor.diğer etiketleri etkilemiyor. 
+
+absolude: dört köşeden konumlandırma veriyor. normal akıstan cıkıyor, relative ile farkı budur
+left 250px ver aslında siyah orada sadece normal akıştan cıktı kapladıgı alanı ortadan kaldırdı
+
+fixed: etiketi tarayıcı penceresinde göre ayarlıyor. sayfa kaydırırken bile komut sabit, top left gibi değerler alıyor tarayıcıya göre 
+sabitliyor. sağ üst köşeye sabitledik
+
+sticky: bir etiketi tarayıcının penceresi içinde sabitlemeye
+-->
